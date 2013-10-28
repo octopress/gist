@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Your New Jekyll Site</title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/css/main.css">
+
+    </head>
+    <body>
+
+        <div class="site">
+          <div class="header">
+            <h1 class="title"><a href="/">Your New Jekyll Site</a></h1>
+            <a class="extra" href="/">home</a>
+          </div>
+
+          <figure class='code'><figcaption>guard-jekyll-plus.rb<a href='https://gist.github.com/5946651'>link</a></figcaption><div class='highlight'><table><tr><td class='line-numbers' aria-hidden='true'><pre><div data-line='0' class='line-number'></div><div data-line='1' class='line-number'></div><div data-line='2' class='line-number'></div><div data-line='3' class='line-number'></div><div data-line='4' class='line-number'></div><div data-line='5' class='line-number'></div><div data-line='6' class='line-number'></div><div data-line='7' class='line-number'></div><div data-line='8' class='line-number'></div><div data-line='9' class='line-number'></div><div data-line='10' class='line-number'></div><div data-line='11' class='line-number'></div><div data-line='12' class='line-number'></div><div data-line='13' class='line-number'></div><div data-line='14' class='line-number'></div><div data-line='15' class='line-number'></div><div data-line='16' class='line-number'></div><div data-line='17' class='line-number'></div><div data-line='18' class='line-number'></div><div data-line='19' class='line-number'></div><div data-line='20' class='line-number'></div><div data-line='21' class='line-number'></div><div data-line='22' class='line-number'></div><div data-line='23' class='line-number'></div><div data-line='24' class='line-number'></div><div data-line='25' class='line-number'></div><div data-line='26' class='line-number'></div><div data-line='27' class='line-number'></div><div data-line='28' class='line-number'></div><div data-line='29' class='line-number'></div><div data-line='30' class='line-number'></div><div data-line='31' class='line-number'></div><div data-line='32' class='line-number'></div><div data-line='33' class='line-number'></div><div data-line='34' class='line-number'></div><div data-line='35' class='line-number'></div><div data-line='36' class='line-number'></div><div data-line='37' class='line-number'></div><div data-line='38' class='line-number'></div><div data-line='39' class='line-number'></div><div data-line='40' class='line-number'></div><div data-line='41' class='line-number'></div><div data-line='42' class='line-number'></div><div data-line='43' class='line-number'></div><div data-line='44' class='line-number'></div><div data-line='45' class='line-number'></div><div data-line='46' class='line-number'></div><div data-line='47' class='line-number'></div><div data-line='48' class='line-number'></div><div data-line='49' class='line-number'></div><div data-line='50' class='line-number'></div><div data-line='51' class='line-number'></div><div data-line='52' class='line-number'></div><div data-line='53' class='line-number'></div><div data-line='54' class='line-number'></div><div data-line='55' class='line-number'></div><div data-line='56' class='line-number'></div><div data-line='57' class='line-number'></div><div data-line='58' class='line-number'></div><div data-line='59' class='line-number'></div><div data-line='60' class='line-number'></div><div data-line='61' class='line-number'></div><div data-line='62' class='line-number'></div><div data-line='63' class='line-number'></div><div data-line='64' class='line-number'></div><div data-line='65' class='line-number'></div><div data-line='66' class='line-number'></div><div data-line='67' class='line-number'></div><div data-line='68' class='line-number'></div><div data-line='69' class='line-number'></div><div data-line='70' class='line-number'></div><div data-line='71' class='line-number'></div><div data-line='72' class='line-number'></div><div data-line='73' class='line-number'></div><div data-line='74' class='line-number'></div><div data-line='75' class='line-number'></div><div data-line='76' class='line-number'></div><div data-line='77' class='line-number'></div><div data-line='78' class='line-number'></div><div data-line='79' class='line-number'></div><div data-line='80' class='line-number'></div><div data-line='81' class='line-number'></div><div data-line='82' class='line-number'></div><div data-line='83' class='line-number'></div><div data-line='84' class='line-number'></div><div data-line='85' class='line-number'></div><div data-line='86' class='line-number'></div><div data-line='87' class='line-number'></div><div data-line='88' class='line-number'></div><div data-line='89' class='line-number'></div><div data-line='90' class='line-number'></div><div data-line='91' class='line-number'></div><div data-line='92' class='line-number'></div><div data-line='93' class='line-number'></div><div data-line='94' class='line-number'></div><div data-line='95' class='line-number'></div><div data-line='96' class='line-number'></div><div data-line='97' class='line-number'></div><div data-line='98' class='line-number'></div><div data-line='99' class='line-number'></div><div data-line='100' class='line-number'></div><div data-line='101' class='line-number'></div><div data-line='102' class='line-number'></div><div data-line='103' class='line-number'></div><div data-line='104' class='line-number'></div><div data-line='105' class='line-number'></div><div data-line='106' class='line-number'></div><div data-line='107' class='line-number'></div><div data-line='108' class='line-number'></div><div data-line='109' class='line-number'></div><div data-line='110' class='line-number'></div><div data-line='111' class='line-number'></div><div data-line='112' class='line-number'></div><div data-line='113' class='line-number'></div><div data-line='114' class='line-number'></div><div data-line='115' class='line-number'></div><div data-line='116' class='line-number'></div><div data-line='117' class='line-number'></div><div data-line='118' class='line-number'></div></pre></td><td class='main  ruby'><pre><div class='line'><span class="nb">require</span> <span class="s1">&#39;guard&#39;</span>
+</div><div class='line'><span class="nb">require</span> <span class="s1">&#39;guard/guard&#39;</span>
+</div><div class='line'> </div><div class='line'><span class="nb">require</span> <span class="s1">&#39;jekyll&#39;</span>
+</div><div class='line'> </div><div class='line'><span class="k">module</span> <span class="nn">Guard</span>
+</div><div class='line'>  <span class="k">class</span> <span class="nc">Jekyll</span> <span class="o">&lt;</span> <span class="no">Guard</span>
+</div><div class='line'> </div><div class='line'>    <span class="k">def</span> <span class="nf">initialize</span> <span class="p">(</span><span class="n">watchers</span><span class="o">=[]</span><span class="p">,</span> <span class="n">options</span><span class="o">=</span><span class="p">{})</span>
+</div><div class='line'>      <span class="k">super</span>
+</div><div class='line'> </div><div class='line'>      <span class="vi">@options</span> <span class="o">=</span> <span class="p">{</span>
+</div><div class='line'>        <span class="ss">:extensions</span> <span class="o">=&gt;</span> <span class="o">[]</span><span class="p">,</span>
+</div><div class='line'>        <span class="ss">:config</span> <span class="o">=&gt;</span> <span class="s1">&#39;_config.yml&#39;</span>
+</div><div class='line'>      <span class="p">}</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">options</span><span class="p">)</span>
+</div><div class='line'> </div><div class='line'>      <span class="n">default_extensions</span> <span class="o">=</span> <span class="o">[</span><span class="s1">&#39;md&#39;</span><span class="p">,</span><span class="s1">&#39;markdown&#39;</span><span class="p">,</span><span class="s1">&#39;textile&#39;</span><span class="p">,</span><span class="s1">&#39;html&#39;</span><span class="p">,</span><span class="s1">&#39;haml&#39;</span><span class="p">,</span><span class="s1">&#39;slim&#39;</span><span class="p">,</span><span class="s1">&#39;xml&#39;</span><span class="o">]</span>
+</div><div class='line'> </div><div class='line'>      <span class="n">config</span> <span class="o">=</span> <span class="o">::</span><span class="no">Jekyll</span><span class="o">.</span><span class="n">configuration</span><span class="p">(</span><span class="n">options</span><span class="p">)</span>
+</div><div class='line'>      <span class="vi">@site</span> <span class="o">=</span> <span class="o">::</span><span class="ss">Jekyll</span><span class="p">:</span><span class="ss">:Site</span><span class="o">.</span><span class="n">new</span> <span class="n">config</span>
+</div><div class='line'> </div><div class='line'>      <span class="vi">@options</span><span class="o">[</span><span class="ss">:source</span><span class="o">]</span> <span class="o">=</span> <span class="n">config</span><span class="o">[</span><span class="s1">&#39;source&#39;</span><span class="o">]</span>
+</div><div class='line'>      <span class="vi">@options</span><span class="o">[</span><span class="ss">:destination</span><span class="o">]</span> <span class="o">=</span> <span class="n">config</span><span class="o">[</span><span class="s1">&#39;destination&#39;</span><span class="o">]</span>
+</div><div class='line'>      <span class="vi">@options</span><span class="o">[</span><span class="ss">:extensions</span><span class="o">]</span> <span class="o">=</span> <span class="vi">@options</span><span class="o">[</span><span class="ss">:extensions</span><span class="o">].</span><span class="n">concat</span><span class="p">(</span><span class="n">default_extensions</span><span class="p">)</span><span class="o">.</span><span class="n">flatten</span><span class="o">.</span><span class="n">uniq</span>
+</div><div class='line'> </div><div class='line'>      <span class="c1"># Convert array of extensions into a regex for matching file extensions eg, /\.md$|\.markdown$|\.html$/i</span>
+</div><div class='line'>      <span class="vi">@extensions</span> <span class="o">=</span> <span class="no">Regexp</span><span class="o">.</span><span class="n">new</span> <span class="vi">@options</span><span class="o">[</span><span class="ss">:extensions</span><span class="o">].</span><span class="n">map</span> <span class="p">{</span> <span class="o">|</span><span class="n">e</span><span class="o">|</span> <span class="p">(</span><span class="n">e</span> <span class="o">&lt;&lt;</span> <span class="s1">&#39;$&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">gsub</span><span class="p">(</span><span class="s1">&#39;\.&#39;</span><span class="p">,</span> <span class="s1">&#39;\\.&#39;</span><span class="p">)</span> <span class="p">}</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;|&#39;</span><span class="p">),</span> <span class="kp">true</span>
+</div><div class='line'> </div><div class='line'>    <span class="k">end</span>
+</div><div class='line'> </div><div class='line'>    <span class="c1"># Calls #run_all if the :all_on_start option is present.</span>
+</div><div class='line'>    <span class="k">def</span> <span class="nf">start</span>
+</div><div class='line'>      <span class="no">UI</span><span class="o">.</span><span class="n">info</span> <span class="s1">&#39;Guard::Jekyll is watching for file changes&#39;</span>
+</div><div class='line'>      <span class="n">rebuild</span>
+</div><div class='line'>    <span class="k">end</span>
+</div><div class='line'> </div><div class='line'>    <span class="k">def</span> <span class="nf">reload</span>
+</div><div class='line'>      <span class="n">compile</span>
+</div><div class='line'>    <span class="k">end</span>
+</div><div class='line'> </div><div class='line'>    <span class="k">def</span> <span class="nf">run_all</span>
+</div><div class='line'>      <span class="n">rebuild</span>
+</div><div class='line'>    <span class="k">end</span>
+</div><div class='line'> </div><div class='line'>    <span class="k">def</span> <span class="nf">run_on_changes</span><span class="p">(</span><span class="n">paths</span><span class="p">)</span>
+</div><div class='line'>      <span class="n">matches</span> <span class="o">=</span> <span class="o">[]</span>
+</div><div class='line'>      <span class="n">copy_files</span> <span class="o">=</span> <span class="o">[]</span>
+</div><div class='line'>      <span class="n">remove_files</span> <span class="o">=</span> <span class="o">[]</span>
+</div><div class='line'>      <span class="n">paths</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">file</span><span class="o">|</span>
+</div><div class='line'>        <span class="k">if</span> <span class="no">File</span><span class="o">.</span><span class="n">exist?</span> <span class="n">file</span>
+</div><div class='line'>          <span class="k">if</span> <span class="n">file</span> <span class="o">=~</span> <span class="vi">@extensions</span> <span class="ow">or</span> <span class="n">file</span> <span class="o">!=~</span> <span class="sr">/^</span><span class="si">#{</span><span class="vi">@options</span><span class="o">[</span><span class="ss">:source</span><span class="o">]</span><span class="si">}</span><span class="sr">/</span>
+</div><div class='line'>            <span class="n">matches</span><span class="o">.</span><span class="n">push</span> <span class="n">file</span>
+</div><div class='line'>          <span class="k">else</span>
+</div><div class='line'>            <span class="n">copy_files</span><span class="o">.</span><span class="n">push</span> <span class="n">file</span>
+</div><div class='line'>          <span class="k">end</span>
+</div><div class='line'>        <span class="k">else</span>
+</div><div class='line'>          <span class="n">remove_files</span><span class="o">.</span><span class="n">push</span> <span class="n">file</span>
+</div><div class='line'>        <span class="k">end</span>
+</div><div class='line'>      <span class="k">end</span>
+</div><div class='line'> </div><div class='line'>      <span class="k">if</span> <span class="n">matches</span><span class="o">.</span><span class="n">length</span> <span class="o">&gt;</span> <span class="mi">0</span>
+</div><div class='line'>        <span class="n">rebuild</span>
+</div><div class='line'>      <span class="k">else</span>
+</div><div class='line'>        <span class="c1"># If changes don&#39;t trigger Jekyll extension matches</span>
+</div><div class='line'>        <span class="c1"># manually copy and remove changed files</span>
+</div><div class='line'>        <span class="n">copy_files</span><span class="o">.</span><span class="n">each</span>   <span class="p">{</span> <span class="o">|</span><span class="n">f</span><span class="o">|</span> <span class="n">copy</span> <span class="n">f</span> <span class="p">}</span>
+</div><div class='line'>        <span class="n">remove_files</span><span class="o">.</span><span class="n">each</span> <span class="p">{</span> <span class="o">|</span><span class="n">f</span><span class="o">|</span> <span class="n">remove</span> <span class="n">f</span> <span class="p">}</span>
+</div><div class='line'>      <span class="k">end</span>
+</div><div class='line'>    <span class="k">end</span>
+</div><div class='line'> </div><div class='line'>    <span class="kp">private</span>
+</div><div class='line'> </div><div class='line'>    <span class="k">def</span> <span class="nf">destination_path</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
+</div><div class='line'>      <span class="n">file</span><span class="o">.</span><span class="n">sub</span> <span class="sr">/^</span><span class="si">#{</span><span class="vi">@options</span><span class="o">[</span><span class="ss">:source</span><span class="o">]</span><span class="si">}</span><span class="sr">/</span><span class="p">,</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="vi">@options</span><span class="o">[</span><span class="ss">:destination</span><span class="o">]</span><span class="si">}</span><span class="s2">&quot;</span>
+</div><div class='line'>    <span class="k">end</span>
+</div><div class='line'> </div><div class='line'>    <span class="k">def</span> <span class="nf">copy</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
+</div><div class='line'>      <span class="n">destination_file</span> <span class="o">=</span> <span class="n">destination_path</span> <span class="n">file</span>
+</div><div class='line'>      <span class="no">FileUtils</span><span class="o">.</span><span class="n">mkdir_p</span> <span class="no">File</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">destination_file</span><span class="p">)</span>
+</div><div class='line'>      <span class="no">FileUtils</span><span class="o">.</span><span class="n">cp</span> <span class="n">file</span><span class="p">,</span> <span class="n">destination_file</span>
+</div><div class='line'>      <span class="no">UI</span><span class="o">.</span><span class="n">info</span> <span class="s2">&quot;Guard::Jekyll&quot;</span> <span class="o">+</span> <span class="s2">&quot;    copied &quot;</span><span class="o">.</span><span class="n">yellow</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">file</span><span class="si">}</span><span class="s2"> -&gt; </span><span class="si">#{</span><span class="n">destination_file</span><span class="si">}</span><span class="s2">&quot;</span>
+</div><div class='line'>      <span class="kp">true</span>
+</div><div class='line'>    <span class="k">end</span>
+</div><div class='line'> </div><div class='line'>    <span class="k">def</span> <span class="nf">remove</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
+</div><div class='line'>      <span class="n">destination_file</span> <span class="o">=</span> <span class="n">destination_path</span> <span class="n">file</span>
+</div><div class='line'>      <span class="k">if</span> <span class="no">File</span><span class="o">.</span><span class="n">exist?</span> <span class="n">destination_file</span>
+</div><div class='line'>        <span class="k">begin</span>
+</div><div class='line'>          <span class="c1"># Remove deleted source file from destination</span>
+</div><div class='line'>          <span class="no">FileUtils</span><span class="o">.</span><span class="n">rm</span> <span class="n">destination_file</span>
+</div><div class='line'>          <span class="no">UI</span><span class="o">.</span><span class="n">info</span> <span class="s2">&quot;Guard::Jekyll&quot;</span> <span class="o">+</span> <span class="s2">&quot;   delete &quot;</span><span class="o">.</span><span class="n">red</span> <span class="o">+</span> <span class="n">destination_file</span>
+</div><div class='line'> </div><div class='line'>          <span class="c1"># Remove empty directories from destination</span>
+</div><div class='line'>          <span class="n">dir</span> <span class="o">=</span> <span class="no">File</span><span class="o">.</span><span class="n">dirname</span> <span class="n">destination_file</span>
+</div><div class='line'>          <span class="k">if</span> <span class="no">Dir</span><span class="o">[</span><span class="n">dir</span><span class="o">+</span><span class="s1">&#39;/*&#39;</span><span class="o">].</span><span class="n">empty?</span>
+</div><div class='line'>            <span class="no">FileUtils</span><span class="o">.</span><span class="n">rm_r</span><span class="p">(</span><span class="n">dir</span><span class="p">)</span>
+</div><div class='line'>            <span class="no">UI</span><span class="o">.</span><span class="n">info</span> <span class="s2">&quot;Guard::Jekyll&quot;</span> <span class="o">+</span> <span class="s2">&quot;   delete &quot;</span><span class="o">.</span><span class="n">red</span> <span class="o">+</span> <span class="n">dir</span>
+</div><div class='line'>          <span class="k">end</span>
+</div><div class='line'>        <span class="k">rescue</span> <span class="no">Exception</span> <span class="o">=&gt;</span> <span class="n">e</span>
+</div><div class='line'>          <span class="no">UI</span><span class="o">.</span><span class="n">error</span> <span class="s2">&quot;Guard::Jekyll&quot;</span> <span class="o">+</span> <span class="s2">&quot;   failed &quot;</span><span class="o">.</span><span class="n">red</span> <span class="o">+</span> <span class="n">e</span>
+</div><div class='line'>          <span class="kp">throw</span> <span class="ss">:task_has_failed</span>
+</div><div class='line'>        <span class="k">end</span>
+</div><div class='line'> </div><div class='line'>      <span class="k">end</span>
+</div><div class='line'>      <span class="kp">true</span>
+</div><div class='line'>    <span class="k">end</span>
+</div><div class='line'> </div><div class='line'>    <span class="k">def</span> <span class="nf">rebuild</span>
+</div><div class='line'>      <span class="no">UI</span><span class="o">.</span><span class="n">info</span> <span class="s2">&quot;Guard::Jekyll &quot;</span><span class="o">+</span><span class="s2">&quot; building&quot;</span><span class="o">.</span><span class="n">yellow</span>
+</div><div class='line'>      <span class="vi">@site</span><span class="o">.</span><span class="n">process</span>
+</div><div class='line'>      <span class="no">UI</span><span class="o">.</span><span class="n">info</span> <span class="s2">&quot;Guard::Jekyll &quot;</span><span class="o">+</span><span class="s2">&quot; complete&quot;</span><span class="o">.</span><span class="n">green</span> <span class="o">+</span> <span class="s2">&quot; site built in </span><span class="si">#{</span><span class="vi">@options</span><span class="o">[</span><span class="ss">:destination</span><span class="o">]</span><span class="si">}</span><span class="s2">/&quot;</span>
+</div><div class='line'> </div><div class='line'>    <span class="k">rescue</span> <span class="no">Exception</span> <span class="o">=&gt;</span> <span class="n">e</span>
+</div><div class='line'>      <span class="no">UI</span><span class="o">.</span><span class="n">error</span> <span class="s2">&quot;Guard::Jekyll   failed&quot;</span>
+</div><div class='line'>      <span class="kp">throw</span> <span class="ss">:task_has_failed</span>
+</div><div class='line'>    <span class="k">end</span>
+</div><div class='line'> </div><div class='line'>  <span class="k">end</span>
+</div><div class='line'><span class="k">end</span>
+</div></pre></td></tr></table></div></figure>
+
+<figure class='code'><figcaption>Guardfile<a href='https://gist.github.com/5946651'>link</a></figcaption><div class='highlight'><table><tr><td class='line-numbers' aria-hidden='true'><pre><div data-line='0' class='line-number'></div><div data-line='1' class='line-number'></div><div data-line='2' class='line-number'></div><div data-line='3' class='line-number'></div><div data-line='4' class='line-number'></div><div data-line='5' class='line-number'></div><div data-line='6' class='line-number'></div></pre></td><td class='main  ruby'><pre><div class='line'><span class="nb">require</span> <span class="s1">&#39;guards/guard-jekyll-plus.rb&#39;</span>
+</div><div class='line'> </div><div class='line'><span class="c1"># Sample guard</span>
+</div><div class='line'><span class="n">guard</span> <span class="ss">:jekyll</span> <span class="k">do</span>
+</div><div class='line'>  <span class="n">watch</span> <span class="sr">/^source/</span>
+</div><div class='line'>  <span class="n">watch</span> <span class="s1">&#39;_config.yml&#39;</span>
+</div><div class='line'><span class="k">end</span>
+</div></pre></td></tr></table></div></figure>
+
+
+          <div class="footer">
+            <div class="contact">
+              <p>
+                Your Name<br />
+                What You Are<br />
+                you@example.com
+              </p>
+            </div>
+            <div class="contact">
+              <p>
+                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
+                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
+              </p>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>
