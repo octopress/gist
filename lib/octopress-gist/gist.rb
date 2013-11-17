@@ -15,7 +15,8 @@ module Octopress
           filename = $2.strip == "" ? nil : $2.strip
           options = {
             gist_id: $1.strip,
-            cache: !@cache_disabled
+            cache: !@cache_disabled,
+            escape: false
           }
           options = Pygments.parse_markup(@markup, options)
 

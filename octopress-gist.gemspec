@@ -13,7 +13,7 @@ Gem::Specification.new do |gem|
   gem.homepage      = "https://github.com/octopress/octopress-gist"
   gem.license       = "MIT"
 
-  gem.add_runtime_dependency 'octopress-pygments', '~> 1.2.3'
+  gem.add_runtime_dependency 'octopress-pygments', '~> 1.3.1'
   gem.add_runtime_dependency 'liquid', '~> 2.5.0'
   gem.add_runtime_dependency 'json'
 
