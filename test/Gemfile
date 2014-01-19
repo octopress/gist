@@ -8,4 +8,4 @@ end
 gem "colorator"
 gem "redcarpet"
 gem "RedCloth"
-gem "jekyll", "~> 1.0.0"
+gem "jekyll"
