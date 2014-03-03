@@ -10,7 +10,7 @@ module Octopress
       end
       
       def render(context)
-        if Pygments.clean_markup(@markup) =~ /([\S]*)\s*(\S*)/
+        if CodeHighlighter.clean_markup(@markup) =~ /([\S]*)\s*(\S*)/
           gist_id, filename = $1.strip, $2.strip
           filename = $2.strip == "" ? nil : $2.strip
           options = {
@@ -18,7 +18,7 @@ module Octopress
             cache: !@cache_disabled,
             escape: false
           }
-          options = Pygments.parse_markup(@markup, options)
+          options = CodeHighlighter.parse_markup(@markup, options)
 
           if @cache_disabled or ! gist = Cache.read_cache(options)
             gist = download_gist(options)
@@ -34,12 +34,12 @@ module Octopress
               lang: file['language'].downcase
             }.merge(options)
             begin
-              code = Pygments.highlight(file['content'], opt)
+              code = CodeHighlighter.highlight(file['content'], opt)
               code = "<notextile>#{code}</notextile>" if context.registers[:page]['path'].match(/textile/)
               output << code
-            rescue MentosError => e
+            rescue => e
               markup = "{% #{@tag_name} #{@markup.strip} %}"
-              Pygments.highlight_failed(e, "{% #{@tag_name} [gist_id] [file_name] [options...] %}", markup, file['content'])
+              CodeHighlighter.highlight_failed(e, "{% #{@tag_name} [gist_id] [file_name] [options...] %}", markup, file['content'])
             end
           end
           output.join "\n"

@@ -1,5 +1,5 @@
 require 'liquid'
-require 'octopress-pygments'
+require 'octopress-code-highlighter'
 require 'open-uri'
 require 'json'
 

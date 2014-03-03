@@ -2,10 +2,9 @@ source 'https://rubygems.org'
 
 # Specify your gem's dependencies in jekyll-markdown-block.gemspec
 group :jekyll_plugins do
-  gem "octopress-gist", path: "../../"
+  gem "octopress-ink", path: "../../ink"
+  gem "octopress-gist", path: "../"
 end
 
-gem "colorator"
 gem "redcarpet"
 gem "RedCloth"
-gem "jekyll"

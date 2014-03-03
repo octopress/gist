@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.1.0
+- Switched to the new octopress-code-highlighter gem.
+
 ## 1.0.2
 - Updated to latest Octopress pygments.
 - Now using Octopress Ink.
