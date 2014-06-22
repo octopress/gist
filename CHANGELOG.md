@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.2.0
+- Now using octopress-code-highlighter 4.0.0 for pygments/rouge support.
+
 ## 1.1.0
 - Switched to the new octopress-code-highlighter gem.
 

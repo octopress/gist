@@ -15,7 +15,14 @@
             <a class="extra" href="/">home</a>
           </div>
 
-          <figure class='code-highlight-figure'><figcaption class='code-highlight-caption'><span class='code-highlight-caption-title'>guard-jekyll-plus.rb</span><a class='code-highlight-caption-link' href='https://gist.github.com/5946651'>link</a></figcaption><div class='code-highlight'><pre class='code-highlight-pre'><div data-line='1' class='code-highlight-row numbered'><div class='code-highlight-line'>require</span> <span class="s1">&#39;guard&#39;</span>
+          <figure class='code-highlight-figure'><figcaption class='code-highlight-caption'><span class='code-highlight-caption-title'>Guardfile</span><a class='code-highlight-caption-link' href='https://gist.github.com/5946651'>link</a></figcaption><div class='code-highlight'><pre class='code-highlight-pre'><div data-line='1' class='code-highlight-row numbered'><div class='code-highlight-line'>require</span> <span class="s1">&#39;guards/guard-jekyll-plus.rb&#39;</span>
+</div></div><div data-line='2' class='code-highlight-row numbered'><div class='code-highlight-line'> </div></div><div data-line='3' class='code-highlight-row numbered'><div class='code-highlight-line'><span class="c1"># Sample guard</span>
+</div></div><div data-line='4' class='code-highlight-row numbered'><div class='code-highlight-line'><span class="n">guard</span> <span class="ss">:jekyll</span> <span class="k">do</span>
+</div></div><div data-line='5' class='code-highlight-row numbered'><div class='code-highlight-line'>  <span class="n">watch</span> <span class="sr">/^source/</span>
+</div></div><div data-line='6' class='code-highlight-row numbered'><div class='code-highlight-line'>  <span class="n">watch</span> <span class="s1">&#39;_config.yml&#39;</span>
+</div></div><div data-line='7' class='code-highlight-row numbered'><div class='code-highlight-line'><span class="k">end</span></div></div></pre></div></figure>
+
+<figure class='code-highlight-figure'><figcaption class='code-highlight-caption'><span class='code-highlight-caption-title'>guard-jekyll-plus.rb</span><a class='code-highlight-caption-link' href='https://gist.github.com/5946651'>link</a></figcaption><div class='code-highlight'><pre class='code-highlight-pre'><div data-line='1' class='code-highlight-row numbered'><div class='code-highlight-line'>require</span> <span class="s1">&#39;guard&#39;</span>
 </div></div><div data-line='2' class='code-highlight-row numbered'><div class='code-highlight-line'><span class="nb">require</span> <span class="s1">&#39;guard/guard&#39;</span>
 </div></div><div data-line='3' class='code-highlight-row numbered'><div class='code-highlight-line'> </div></div><div data-line='4' class='code-highlight-row numbered'><div class='code-highlight-line'><span class="nb">require</span> <span class="s1">&#39;jekyll&#39;</span>
 </div></div><div data-line='5' class='code-highlight-row numbered'><div class='code-highlight-line'> </div></div><div data-line='6' class='code-highlight-row numbered'><div class='code-highlight-line'><span class="k">module</span> <span class="nn">Guard</span>
@@ -111,13 +118,6 @@
 </div></div><div data-line='116' class='code-highlight-row numbered'><div class='code-highlight-line'>    <span class="k">end</span>
 </div></div><div data-line='117' class='code-highlight-row numbered'><div class='code-highlight-line'> </div></div><div data-line='118' class='code-highlight-row numbered'><div class='code-highlight-line'>  <span class="k">end</span>
 </div></div><div data-line='119' class='code-highlight-row numbered'><div class='code-highlight-line'><span class="k">end</span></div></div></pre></div></figure>
-
-<figure class='code-highlight-figure'><figcaption class='code-highlight-caption'><span class='code-highlight-caption-title'>Guardfile</span><a class='code-highlight-caption-link' href='https://gist.github.com/5946651'>link</a></figcaption><div class='code-highlight'><pre class='code-highlight-pre'><div data-line='1' class='code-highlight-row numbered'><div class='code-highlight-line'>require</span> <span class="s1">&#39;guards/guard-jekyll-plus.rb&#39;</span>
-</div></div><div data-line='2' class='code-highlight-row numbered'><div class='code-highlight-line'> </div></div><div data-line='3' class='code-highlight-row numbered'><div class='code-highlight-line'><span class="c1"># Sample guard</span>
-</div></div><div data-line='4' class='code-highlight-row numbered'><div class='code-highlight-line'><span class="n">guard</span> <span class="ss">:jekyll</span> <span class="k">do</span>
-</div></div><div data-line='5' class='code-highlight-row numbered'><div class='code-highlight-line'>  <span class="n">watch</span> <span class="sr">/^source/</span>
-</div></div><div data-line='6' class='code-highlight-row numbered'><div class='code-highlight-line'>  <span class="n">watch</span> <span class="s1">&#39;_config.yml&#39;</span>
-</div></div><div data-line='7' class='code-highlight-row numbered'><div class='code-highlight-line'><span class="k">end</span></div></div></pre></div></figure>
 
 
           <div class="footer">

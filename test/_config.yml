@@ -5,4 +5,4 @@ redcarpet:
 source: source
 plugins: source/_plugins
 destination: site
-pygments: false
+highlighter: false
