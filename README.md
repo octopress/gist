@@ -6,28 +6,22 @@ Embed GitHub Gists in your Jekyll or Octopress blog.
 
 ## Installation
 
-Add this line to your application's Gemfile under
-the :jekyll_plugins group:
+Add this line to your application's Gemfile
 
 ```ruby
-group :jekyll_plugins do
-  gem 'octopress-gist'
-end
+gem 'octopress-gist'
 ```
 
 And then execute:
 
     $ bundle
 
-Next add this to your plugins folder to automatically load any Jekyll plugins in your :jekyll_plugins group.
+Next add the gem to your Jekyll's `gems` configuration.
 
-```ruby
-# in _plugins/bundler.rb
-require "bundler/setup"
-Bundler.require(:jekyll_plugins)
+```yaml
+gems:
+  - octopress-gist
 ```
-
-Or you can just create a ruby file in your Jekyll plugins directory with the line `require "octopress-gist"`
 
 ## Usage
 
