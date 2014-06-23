@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.3.0
+- Added support for start, end and range options for showing code partials.
+
 ## 1.2.0
 - Now using octopress-code-highlighter 4.0.0 for pygments/rouge support.
 

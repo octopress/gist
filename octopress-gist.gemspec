@@ -10,10 +10,11 @@ Gem::Specification.new do |gem|
   gem.email         = ["brandon@imathis.com"]
   gem.description   = %q{Embed GitHub gists, support caching, and multiple files per gist.}
   gem.summary       = %q{Embed GitHub gists, support caching, and multiple files per gist.}
-  gem.homepage      = "https://github.com/octopress/octopress-gist"
+  gem.homepage      = "https://github.com/octopress/gist"
   gem.license       = "MIT"
 
-  gem.add_runtime_dependency 'octopress-code-highlighter', '~> 4.0.0'
+  gem.add_runtime_dependency 'jekyll', '~> 2.0.3'
+  gem.add_runtime_dependency 'octopress-code-highlighter', '~> 4.0.1'
 
   gem.add_development_dependency 'rake'
   gem.add_development_dependency 'rspec'

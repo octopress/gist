@@ -28,13 +28,21 @@ module Octopress
           options[:link_text] ||= "View Gist"
 
           output = []
-          gist_files(gist, filename).each do |file|
+          files = gist_files(gist, filename)
+          if files.length > 1 && (options[:start] || options[:end] || options[:range])
+            puts "Gist embed warning:"
+            puts "  You should probably avoid using start, end or range options on gist embeds with multiple files"
+            puts "  Embed files one at a time like {% gist 124151 filename %}"
+          end
+
+          files.each do |file|
             opt = {
               title: file['filename'],
-              lang: file['language'].downcase
+              lang: (file['language'] || '').downcase
             }.merge(options)
             begin
-              code = CodeHighlighter.highlight(file['content'], opt)
+              code = CodeHighlighter.select_lines(file['content'], opt)
+              code = CodeHighlighter.highlight(code, opt)
               code = "<notextile>#{code}</notextile>" if context.registers[:page]['path'].match(/textile/)
               output << code
             rescue => e
