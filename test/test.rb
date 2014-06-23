@@ -12,7 +12,8 @@ def test(file)
   end
 end
 
-`rm -rf site; bundle exec jekyll build --trace`
+system('rm -rf site .code-highlighter-cache .gist-cache')
+system('bundle exec jekyll build --trace')
 
 test('index')
 test('textile-test')
