@@ -6,3 +6,6 @@ source: source
 plugins: source/_plugins
 destination: site
 highlighter: false
+
+gems:
+  - octopress-gist
