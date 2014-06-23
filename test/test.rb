@@ -1,21 +1,13 @@
 require 'colorator'
 has_failed = false
 
-def test(file)
-  diff = `diff expected/#{file}.html site/#{file}.html`
-  if diff.size == 0 and File.exist?("site/#{file}.html")
-    puts "passed".green
-  else
-    puts "failed".red
-    puts diff
-    has_failed = true
-  end
-end
-
 system('rm -rf site .code-highlighter-cache .gist-cache')
-system('bundle exec jekyll build --trace')
+system('jekyll build')
 
-test('index')
-test('textile-test')
+diff1 = `diff site/index.html expected/index.html`
+diff2 = `diff site/textile-test.html expected/textile-test.html`
 
-abort if has_failed
+abort "Failed with diff: #{diff1}" if diff1.size > 0
+abort "Failed with diff: #{diff2}" if diff2.size > 0
+
+puts "passed".green
