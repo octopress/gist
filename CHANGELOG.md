@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.3.1 - 2014-06-25
+- Fix: Better support for being rendered as a partial.
+
 ## 1.3.0
 - Added support for start, end and range options for showing code partials.
 

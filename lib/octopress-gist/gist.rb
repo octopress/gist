@@ -43,7 +43,9 @@ module Octopress
             begin
               code = CodeHighlighter.select_lines(file['content'], opt)
               code = CodeHighlighter.highlight(code, opt)
-              code = "<notextile>#{code}</notextile>" if context.registers[:page]['path'].match(/textile/)
+              if page = context.registers[:page]
+                code = "<notextile>#{code}</notextile>" if page['path'] && page['path'].match(/textile/)
+              end
               output << code
             rescue => e
               markup = "{% #{@tag_name} #{@markup.strip} %}"
@@ -88,6 +90,7 @@ module Octopress
           retry
         end
       rescue => e
+         require 'pry-debugger'; binding.pry
         puts "Failed to download Gist: #{gist}.".red
         puts e.extend Error
       end
