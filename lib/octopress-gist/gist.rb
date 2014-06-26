@@ -90,7 +90,6 @@ module Octopress
           retry
         end
       rescue => e
-         require 'pry-debugger'; binding.pry
         puts "Failed to download Gist: #{gist}.".red
         puts e.extend Error
       end

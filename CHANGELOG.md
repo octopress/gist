@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.3.2 - 2014-06-25
+- Fix: Removed debugging reference
+
 ## 1.3.1 - 2014-06-25
 - Fix: Better support for being rendered as a partial.
 
