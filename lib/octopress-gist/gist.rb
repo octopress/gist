@@ -90,7 +90,7 @@ module Octopress
           retry
         end
       rescue => e
-        puts "Failed to download Gist: #{gist}.".red
+        puts "Failed to download Gist: #{options[:gist_id]}.".red
         puts e.extend Error
       end
     end

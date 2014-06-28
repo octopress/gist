@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.3.3 - 2014-06-28
+- Fix: Error message threw an error. I know right?
+
 ## 1.3.2 - 2014-06-25
 - Fix: Removed debugging reference
 
