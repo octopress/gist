@@ -13,8 +13,8 @@ Gem::Specification.new do |gem|
   gem.homepage      = "https://github.com/octopress/gist"
   gem.license       = "MIT"
 
-  gem.add_runtime_dependency 'jekyll', '~> 2.0.3'
-  gem.add_runtime_dependency 'octopress-code-highlighter', '~> 4.0.2'
+  gem.add_runtime_dependency 'jekyll', '~> 2.0'
+  gem.add_runtime_dependency 'octopress-code-highlighter', '~> 4.0'
 
   gem.add_development_dependency 'rake'
   gem.add_development_dependency 'rspec'
