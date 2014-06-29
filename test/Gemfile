@@ -5,6 +5,7 @@ group :jekyll_plugins do
   gem "octopress-code-highlighter", path: "../../code-highlighter"
   gem "octopress-gist", path: "../"
   gem "pry-debugger"
+  gem "jekyll"
 end
 
 gem "redcarpet"
