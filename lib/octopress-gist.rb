@@ -2,9 +2,7 @@ require 'liquid'
 require 'octopress-code-highlighter'
 require 'open-uri'
 require 'json'
-
-$:.unshift File.dirname(__FILE__)
-$LOAD_PATH.unshift(File.dirname(__FILE__))
+require 'octopress-gist/version'
 
 module Octopress
   module Gist
@@ -16,4 +14,15 @@ end
 
 Liquid::Template.register_tag('gist', Octopress::Gist::Tag)
 Liquid::Template.register_tag('gistnocache', Octopress::Gist::NoCacheTag)
+
+if defined? Octopress::Docs
+  Octopress::Docs.add({
+    name:        "Octopress Gist",
+    gem:         "octopress-gist",
+    description: "Embed GitHub Gists in your Jekyll or Octopress blog.",
+    path:        File.expand_path(File.join(File.dirname(__FILE__), "../")),
+    source_url:  "https://github.com/octopress/gist",
+    version:     Octopress::Gist::VERSION
+  })
+end
 

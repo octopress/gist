@@ -1,0 +1,4 @@
+title: Standard build
+build: true
+before: rm -rf site .code-highlighter-cache .gist-cache
+compare: _expected _site

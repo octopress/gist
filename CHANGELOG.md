@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.3.5 - 2015-01-05
+
+- Updated tests; now using Clash.
+- Improved example documentation.
+- Added support for Octopress docs.
+
 ## 1.3.4 - 2014-06-29
 - Loosened dependency versions.
 

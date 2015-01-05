@@ -3,25 +3,30 @@
 Embed GitHub Gists in your Jekyll or Octopress blog.
 
 [![Build Status](https://travis-ci.org/octopress/gist.png?branch=master)](https://travis-ci.org/octopress/gist)
+[![Gem Version](https://badge.fury.io/rb/octopress-gist.png)](https://badge.fury.io/rb/octopress-gist)
 
 ## Installation
 
-Add this line to your application's Gemfile
+### Using Bundler
 
-```ruby
-gem 'octopress-gist'
-```
+Add this gem to your site's Gemfile in the `:jekyll_plugins` group:
 
-And then execute:
+    group :jekyll_plugins do
+      gem 'octopress-gist'
+    end
+
+Then install the gem with Bundler
 
     $ bundle
 
-Next add the gem to your Jekyll's `gems` configuration.
+### Manual Installation
 
-```yaml
-gems:
-  - octopress-gist
-```
+    $ gem install octopress-gist
+
+Then add the gem to your Jekyll configuration.
+
+    gems:
+      -octopress-gist
 
 ## Usage
 
@@ -31,27 +36,45 @@ The gist syntax looks like this.
 {% gist [gist_id] [file_name] [options] %}
 ```
 
+### Options
+
+Note that order does not matter.
+
+| Options      | Example                | Description                                                           |
+|:-------------|:-----------------------|:----------------------------------------------------------------------|
+|`title`       | `title:"Figure 1.A"`   | Add a figcaption title. Defaults to Gist title (usually the filename). |
+|`link_text`   | `link_text:"Download"` | Text for the link to the gist, default: `"link"`. |
+|`linenos`     | `lineos:false`         | Disable line numbering. |
+|`start`       | `start:5`              | Start embedding the gist from the 5th line number. |
+|`end`         | `end:15`               | Stop embedding the gist after 15th line number. |
+|`range`       | `range:5-15`           | Embed lines 5-15 of the gist. |
+|`mark`        | `mark:5-7,10`          | Highlight lines of code. This example marks lines 5,6,7 and 10. |
+|`class`       | `class:"solution"`     | Add CSS class name(s) to the code `<figure>` element. |
+
 A simple gist embed:
 
 ```
 {% gist 5672127 %}
 ```
 
-This will download the gist and render it with Octopress Pygments, caching both the raw gist, and the highlighted code. 
+This will download the gist and render it with Octopress Pygments, caching both the raw gist, and the highlighted code. If your Gist has multiple files, this will embed each file in its own code figure.
 
-If your Gist has multile files, this will embed each file in it's own code figure.
+Here's a more complex example:
 
+```
+{% gist 5672127 title:"Some cool thing" range:5-10 %}
+```
 
 #### Embed single files in a gist
 
-If your Gist has multile files but you wish to embed files individually, you can like this.
+If your Gist has multiple files but you wish to embed files individually, you can like this.
 
 ```
 {% gist 13411532 some_gist_file_name.rb %}
 
 Comments about this file
 
-{% gist 13411532 some_gist_file_name2.rb %}
+{% gist 13411532 some_other_gist_file_name.rb %}
 
 and so on...
 ```

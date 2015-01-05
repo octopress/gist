@@ -2,11 +2,5 @@ source 'https://rubygems.org'
 
 # Specify your gem's dependencies in jekyll-markdown-block.gemspec
 group :jekyll_plugins do
-  gem "octopress-code-highlighter", path: "../../code-highlighter"
-  gem "octopress-gist", path: "../"
-  gem "pry-debugger"
-  gem "jekyll"
+  gemspec path: "../"
 end
-
-gem "redcarpet"
-gem "RedCloth"
