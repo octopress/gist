@@ -21,4 +21,4 @@ _site
 .gist-cache
 .code-highlighter-cache
 .sass-cache
-site
+_site

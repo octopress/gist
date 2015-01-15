@@ -19,6 +19,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake'
   spec.add_development_dependency 'RedCloth'
   spec.add_development_dependency 'clash'
+  spec.add_development_dependency 'octopress-solarized'
 
   spec.files         = `git ls-files -z`.split("\x0").grep(/^(bin\/|lib\/|assets\/|changelog|readme|license)/i)
   spec.require_paths = ["lib"]
