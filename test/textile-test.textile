@@ -1,4 +1,4 @@
 ---
 ---
-
+{% css_asset_tag %}
 {% gist 5946651 guard-jekyll-plus.rb %}
