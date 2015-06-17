@@ -2,8 +2,8 @@
 
 Embed GitHub Gists in your Jekyll or Octopress blog.
 
-[![Build Status](https://travis-ci.org/octopress/gist.png?branch=master)](https://travis-ci.org/octopress/gist)
-[![Gem Version](https://badge.fury.io/rb/octopress-gist.png)](https://badge.fury.io/rb/octopress-gist)
+[![Build Status](https://travis-ci.org/octopress/gist.svg?branch=master)](https://travis-ci.org/octopress/gist)
+[![Gem Version](https://badge.fury.io/rb/octopress-gist.svg)](https://badge.fury.io/rb/octopress-gist)
 
 ## Installation
 
